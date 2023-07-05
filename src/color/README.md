@@ -7,7 +7,9 @@ A feature to remind you of your favorite color
 
 ```json
 "features": {
-    "ghcr.io/shibadog/devcontainer-feature/color:1": {}
+        "ghcr.io/shibadog/devcontainer-feature/color:1": {
+            "version": "latest"
+        }
 }
 ```
 
