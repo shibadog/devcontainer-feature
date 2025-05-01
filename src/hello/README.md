@@ -7,7 +7,9 @@ A hello world feature
 
 ```json
 "features": {
-    "ghcr.io/shibadog/devcontainer-feature/hello:1": {}
+        "ghcr.io/shibadog/devcontainer-feature/hello:1": {
+            "version": "latest"
+        }
 }
 ```
 
