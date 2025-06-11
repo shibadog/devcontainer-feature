@@ -3,7 +3,6 @@
     "name": "ytt",
     "version": "0.0.1",
     "description": "",
-    "documentaitionUrl": "https://github.com/carvel-dev/ytt",
     "options": {
         "version": {
             "type": "string",
@@ -15,6 +14,6 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/wget-apt-get"
+        "ghcr.io/devcontainers-extra/features/wget-apt-get"
     ]
 }

@@ -4,14 +4,14 @@ set -e
 
 source ./library_scripts.sh
 
-ensure_nanolayer nanolayer_location "v0.4.45"
+ensure_nanolayer nanolayer_location "v0.5.4"
 
 if [[ 'none' == $CONCOURSEURL ]]; then
 
     $nanolayer_location \
         install \
         devcontainer-feature \
-        "ghcr.io/devcontainers-contrib/features/gh-release:1.0.19" \
+        "ghcr.io/devcontainers-extra/features/gh-release:1.0.25" \
         --option repo='concourse/concourse' --option binaryNames='fly' --option version="$VERSION" --option assetRegex="fly.+-linux-.+\.tgz$"
 
 else
@@ -43,7 +43,7 @@ else
     $nanolayer_location \
         install \
         devcontainer-feature \
-        'ghcr.io/devcontainers-contrib/features/curl-apt-get:1'
+        'ghcr.io/devcontainers-extra/features/curl-apt-get:1'
 
     DEFAULT_BIN_LOCATION="/usr/local/bin"
 

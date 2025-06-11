@@ -3,7 +3,6 @@
     "name": "fly",
     "version": "0.0.1",
     "description": "",
-    "documentaitionUrl": "https://github.com/concourse/concourse",
     "options": {
         "version": {
             "type": "string",
@@ -23,6 +22,6 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/wget-apt-get"
+        "ghcr.io/devcontainers-extra/features/wget-apt-get"
     ]
 }
